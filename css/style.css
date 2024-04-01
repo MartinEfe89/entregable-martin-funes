@@ -19,6 +19,7 @@ body {
 .signos {
     display: flex;
     padding: 20px;
+    width: auto;
 }
 
 .carrito img {
@@ -75,6 +76,7 @@ section{
 
 .card img {
     width: 100%;
+    padding: 5px;
     
 }
 
