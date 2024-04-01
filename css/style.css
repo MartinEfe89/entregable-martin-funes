@@ -146,9 +146,6 @@ legend{
 }
 /*Footer*/
 footer p {
-    border-top: 2px;
-    border-color: #526A80;
-    border: solid;
     text-align: center;
     padding: 30px;
     font-family: "Nunito", sans-serif;
