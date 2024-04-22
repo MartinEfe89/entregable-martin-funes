@@ -1,0 +1,31 @@
+@media screen and (max-width: 425px) {
+    .bg-martin .signos{
+        display: none;
+    }
+    .carousel-inner {
+        display: none;
+    }
+    main {
+        .bannersecundario {
+            img {
+                padding: 0%;
+                width: 100%;
+            }
+        }
+
+        section{
+            padding: 0%;
+
+        }
+        .contactos{
+            display: none;
+        }
+        .icono-wpp {
+            a {
+                img {
+                   display: none;
+                }
+            }
+        }
+    }
+}  

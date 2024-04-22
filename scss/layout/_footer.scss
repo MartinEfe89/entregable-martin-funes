@@ -1,0 +1,33 @@
+footer {
+    
+
+    .sub-text {
+        p {
+            padding-top: 50px;
+            text-align: center;
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: 20px;
+            color: #526A80;
+
+        }
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+
+        input[type="text"] {
+            justify-content: center;
+
+            padding: 8px;
+            border-radius: 4px;
+            border: none;
+
+        }
+
+    }
+
+   
+}

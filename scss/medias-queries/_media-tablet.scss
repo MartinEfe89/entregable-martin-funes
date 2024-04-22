@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px) {
+    .bg-martin .signos {
+        display: none;
+    }
+
+    .carousel-inner {
+        display: none;
+    }
+
+    main {
+        .bannersecundario {
+            img {
+                padding: 0%;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import "base/reset";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+
+/*componentes*/
+
+@import "components/tarjetas";
+@import "components/botones";
+@import "utilities/mixins";
+
+/*medias queries*/
+
+@import "medias-queries/media-mobile";
+@import "medias-queries/media-tablet";
+@import "medias-queries/media-desktop";

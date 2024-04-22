@@ -1,0 +1,65 @@
+main {
+    section {
+        margin: 50px;
+        text-align: center;
+
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 50px;
+            margin: 0 auto;
+            max-width: 1920px;
+        }
+    }
+
+    .bannersecundario {
+
+        img {
+            padding: 0 100px;
+            width: 100%;
+
+        }
+    }
+
+    .banner2 img {
+        width: 100%;
+    }
+    .icono-wpp {
+        a {
+            img {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 80px;
+                transition: 1s;
+
+                &:hover{
+                    transform: rotate(40deg,);
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+    .contactos {
+        p {
+            display: flex;
+            justify-content: center;
+           
+        }
+
+        .formcontactos {
+            padding: 0 50px;
+
+           
+        }
+    }
+
+    .direcciones-contactos {
+        padding-top: 20px;
+        text-align: center;
+       
+
+    }
+}

@@ -1,0 +1,61 @@
+@mixin font($size, $color) {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: $size;
+    color: $color;
+}
+
+.nav-cuotas {
+    p {
+        @include font(20px, #F0F8FF)
+    }
+}
+
+.bg-martin {
+    div {
+        ul {
+            li {
+                a {
+                    @include font(30px, #526A80)
+                }
+            }
+        }
+    }
+}
+
+main {
+    section {
+        p {
+            @include font(50px, #526A80)
+        }
+    }
+
+    .contactos {
+        p {
+            @include font(30px,#526A80 )
+        }
+
+        .formcontactos {
+            .form-label {
+                @include font(25px,#526A80 )
+            }
+        }
+    }
+    .direcciones-contactos{
+        @include font(15px, #526A80)
+    }
+
+}
+
+footer {
+
+
+    .pie {
+        text-align: center;
+
+        p {
+            @include font(20px, #526A80)
+        }
+    }
+}

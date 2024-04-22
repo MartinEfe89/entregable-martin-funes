@@ -1,0 +1,83 @@
+/*Variables*/
+$colorceleste:#A3D4FF;
+$colornegro:#526A80;
+$colorblanco:#F0F8FF;
+
+main {
+    .card-content {
+        margin: 10px;
+
+        .button {
+            background-color: $colorceleste;
+            color: $colornegro;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 4px 2px;
+
+            border-radius: 5px;
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            border-color: $colornegro;
+
+            &:hover {
+                color: $colorblanco;
+                background-color: $colornegro;
+            }
+        }
+    }
+
+    .buttonenviar {
+        background-color: $colorceleste;
+        color:$colornegro;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 4px 2px;
+
+        border-radius: 5px;
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        border-color: #526A80;
+
+        &:hover {
+            color:$colorblanco;
+            background-color: $colornegro;
+        }
+
+    }
+
+    .direcciones-contactos p {
+
+        text-align: center;
+        color: $colornegro;
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+
+    }
+}
+
+.footer-content {
+    margin: 100px;
+
+    button {
+        background-color:$colorceleste;
+        color: $colornegro;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        margin-left: 10px;
+        cursor: pointer;
+
+
+        &:hover {
+            background-color: $colornegro;
+            color: $colorblanco;
+        }
+    }
+}
