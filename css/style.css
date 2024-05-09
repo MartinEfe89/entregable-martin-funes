@@ -1,10 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #F0F8FF;
+  overflow-x: hidden;
 }
 
 .nav-cuotas {
@@ -29,9 +31,9 @@ body {
   transition: 1s;
 }
 .bg-martin div ul li a:hover {
-  color: #F0F8FF;
   margin-right: 15px;
   margin-left: 15px;
+  font-weight: bold;
 }
 .bg-martin .signos {
   display: flex;
@@ -41,10 +43,15 @@ body {
 .bg-martin .signos .carrito img {
   padding-right: 20px;
   width: 60px;
+  transition: 1s;
 }
 .bg-martin .signos .corazon img {
   padding-right: 20px;
   width: 70px;
+  transition: 1s;
+}
+.bg-martin .signos .corazon img:hover {
+  transform: rotate(-40deg);
 }
 
 main section {
@@ -56,7 +63,9 @@ main section .grid-container {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 50px;
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 main .bannersecundario img {
   padding: 0 100px;
@@ -76,20 +85,53 @@ main .icono-wpp a img:hover {
   transform: rotate(40deg);
   width: 100px;
 }
-main .contactos p {
+main .contact-section .comment-form {
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-main .contactos .formcontactos {
-  padding: 0 50px;
+main .contact-section .comment-form label {
+  margin-bottom: 0.5rem;
 }
-main .direcciones-contactos {
-  padding-top: 20px;
-  text-align: center;
+main .contact-section .comment-form input[type=email],
+main .contact-section .comment-form textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #7799BA;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  outline: none;
+}
+main .contact-section .comment-form input[type=email]:focus,
+main .contact-section .comment-form textarea:focus {
+  border-color: #526A80;
+}
+main .contact-section .contact-info h3 {
+  padding-bottom: 20px;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 10px;
+}
+.social-media ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.social-media ul li a {
+  text-decoration: none;
+  color: #526A80;
 }
 
 footer .sub-text p {
-  padding-top: 50px;
+  margin: 0;
+  padding-top: 30px;
   text-align: center;
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
@@ -100,12 +142,31 @@ footer .sub-text p {
 footer .footer-content {
   display: flex;
   justify-content: center;
+  margin: 50px;
 }
 footer .footer-content input[type=text] {
   justify-content: center;
-  padding: 8px;
+  padding: 5px;
   border-radius: 4px;
   border: none;
+}
+footer .footer-content2 .enlaces li {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 15px;
+}
+footer .footer-content2 .enlaces li a {
+  text-decoration: none;
+}
+footer .footer-content2 .enlaces li a:hover {
+  color: #1A2128;
+}
+footer .footer-content2 .text {
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  border-top: #789BBB 1px solid;
 }
 
 /*componentes*/
@@ -159,7 +220,7 @@ main .card-content .button {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   margin: 4px 2px;
   border-radius: 5px;
   font-family: "Nunito", sans-serif;
@@ -171,7 +232,7 @@ main .card-content .button:hover {
   color: #F0F8FF;
   background-color: #526A80;
 }
-main .buttonenviar {
+main .comment-form button {
   background-color: #A3D4FF;
   color: #526A80;
   padding: 15px 32px;
@@ -185,16 +246,9 @@ main .buttonenviar {
   font-style: normal;
   border-color: #526A80;
 }
-main .buttonenviar:hover {
+main .comment-form button:hover {
   color: #F0F8FF;
   background-color: #526A80;
-}
-main .direcciones-contactos p {
-  text-align: center;
-  color: #526A80;
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
 
 .footer-content {
@@ -234,24 +288,52 @@ main section p {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-size: 30px;
+  color: #526A80;
+}
+main .contact-section h2 {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 50px;
   color: #526A80;
 }
-main .contactos p {
+main .contact-section .contact-info h3 {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+  color: #526A80;
+}
+main .contact-section .contact-info p {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 10px;
+  color: #526A80;
+}
+main .contact-section .comment-form button {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 30px;
   color: #526A80;
 }
-main .contactos .formcontactos .form-label {
+main .contact-section .social-media h3 {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 25px;
   color: #526A80;
 }
-main .direcciones-contactos {
+main .contact-section .social-media ul li a {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 15px;
+  color: #526A80;
+}
+main .contact-section .contact-info p {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -259,14 +341,18 @@ main .direcciones-contactos {
   color: #526A80;
 }
 
-footer .pie {
-  text-align: center;
-}
-footer .pie p {
+footer .footer-content2 .enlaces a {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 20px;
+  font-size: 15px;
+  color: #526A80;
+}
+footer .footer-content2 .text {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 15px;
   color: #526A80;
 }
 
@@ -291,6 +377,9 @@ footer .pie p {
   main .icono-wpp a img {
     display: none;
   }
+  footer .footer-content2 .text p {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 768px) {
   .bg-martin .signos {
@@ -302,6 +391,11 @@ footer .pie p {
   main .bannersecundario img {
     padding: 0%;
     width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navbar-nav .nav-link {
+    font-size: 24px;
   }
 }
 

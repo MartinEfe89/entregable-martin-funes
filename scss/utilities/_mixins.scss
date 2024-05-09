@@ -25,37 +25,61 @@
 }
 
 main {
-    section {
-        p {
+    section p{
+        @include font(30px,#526A80 )
+    }
+    .contact-section {
+        h2 {
             @include font(50px, #526A80)
         }
-    }
 
-    .contactos {
-        p {
-            @include font(30px,#526A80 )
-        }
-
-        .formcontactos {
-            .form-label {
-                @include font(25px,#526A80 )
+        .contact-info {
+            h3 {
+                @include font(20px,#526A80 )
+            }
+            p {
+                @include font(10px, #526A80)
             }
         }
+
+        .comment-form {
+
+
+            button {
+                @include font(30px, #526A80)
+            }
+        }
+
+        .social-media {
+            h3 {
+                @include font(25px, #526A80)
+            }
+
+            ul li a {
+                @include font(15px, #526A80)
+            }
+        }
+
+        .contact-info p {
+            @include font(15px, #526A80)
+        }
     }
-    .direcciones-contactos{
-        @include font(15px, #526A80)
-    }
+
 
 }
 
+
 footer {
-
-
-    .pie {
-        text-align: center;
-
-        p {
-            @include font(20px, #526A80)
+    .footer-content2 {
+        .enlaces {
+            a {
+                @include font(15px, #526A80)
+            }
         }
+
+        .text {
+            @include font(15px, #526A80)
+        }
+
     }
 }

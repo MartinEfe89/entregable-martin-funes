@@ -29,10 +29,12 @@
                     transition: 1s;
 
                     &:hover {
-                        color: #F0F8FF;
                         margin-right: 15px;
                         margin-left: 15px;
+                        font-weight:bold;
+                       
                     }
+                   
                 }
             }
         }
@@ -48,6 +50,8 @@
             img {
                 padding-right: 20px;
                 width: 60px;
+                transition: 1s;
+              
             }
         }
 
@@ -55,6 +59,11 @@
             img {
                 padding-right: 20px;
                 width: 70px;
+                transition: 1s;
+                &:hover{
+                    transform: rotate(-40deg,);
+                
+                }
             }
         }
     }

@@ -9,7 +9,9 @@ main {
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             grid-gap: 50px;
             margin: 0 auto;
-            max-width: 1920px;
+            max-width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
         }
     }
 
@@ -25,6 +27,7 @@ main {
     .banner2 img {
         width: 100%;
     }
+
     .icono-wpp {
         a {
             img {
@@ -34,32 +37,71 @@ main {
                 width: 80px;
                 transition: 1s;
 
-                &:hover{
-                    transform: rotate(40deg,);
+                &:hover {
+                    transform: rotate(40deg, );
                     width: 100px;
                 }
             }
         }
     }
 
-    .contactos {
-        p {
+
+
+    .contact-section {
+        
+        .comment-form {
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            margin: 0 auto;
             display: flex;
-            justify-content: center;
-           
+            flex-direction: column;
+            align-items: center;
+
+            label {
+                margin-bottom: 0.5rem;
+            }
+
+            input[type="email"],
+            textarea {
+                padding: 0.5rem;
+                margin-bottom: 1rem;
+                width: 100%;
+                border: 1px solid #7799BA;
+                border-radius: 5px;
+                box-sizing: border-box;
+                font-size: 1rem;
+                outline: none;
+
+                &:focus {
+                    border-color: #526A80;
+                    ;
+                }
+            }
+
+
         }
-
-        .formcontactos {
-            padding: 0 50px;
-
-           
+        .contact-info h3{
+            padding-bottom: 20px;
         }
     }
 
-    .direcciones-contactos {
-        padding-top: 20px;
-        text-align: center;
-       
 
+
+}
+
+
+.social-media ul {
+    list-style: none;
+    padding: 10px;
+
+    li {
+        display: inline-block;
+        margin-right: 10px;
+
+        a {
+            text-decoration: none;
+            color: #526A80;
+        }
     }
 }
