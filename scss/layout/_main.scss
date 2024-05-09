@@ -28,10 +28,8 @@ main {
         width: 100%;
     }
 
-
-
     .contact-section {
-        
+
         .comment-form {
             padding: 20px;
             border-radius: 10px;
@@ -64,17 +62,19 @@ main {
 
 
         }
-        .contact-info h3{
+
+        .contact-info h3 {
             padding-bottom: 20px;
         }
+
         .social-media ul {
             list-style: none;
             padding: 10px;
-        
+
             li {
                 display: inline-block;
                 margin-right: 10px;
-        
+
                 a {
                     text-decoration: none;
                     color: #526A80;
@@ -82,6 +82,7 @@ main {
             }
         }
     }
+
     .icono-wpp {
         a {
             img {
@@ -99,5 +100,3 @@ main {
         }
     }
 }
-
-
