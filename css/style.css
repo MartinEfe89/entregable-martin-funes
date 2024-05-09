@@ -74,17 +74,6 @@ main .bannersecundario img {
 main .banner2 img {
   width: 100%;
 }
-main .icono-wpp a img {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 80px;
-  transition: 1s;
-}
-main .icono-wpp a img:hover {
-  transform: rotate(40deg);
-  width: 100px;
-}
 main .contact-section .comment-form {
   padding: 20px;
   border-radius: 10px;
@@ -115,18 +104,28 @@ main .contact-section .comment-form textarea:focus {
 main .contact-section .contact-info h3 {
   padding-bottom: 20px;
 }
-
-.social-media ul {
+main .contact-section .social-media ul {
   list-style: none;
   padding: 10px;
 }
-.social-media ul li {
+main .contact-section .social-media ul li {
   display: inline-block;
   margin-right: 10px;
 }
-.social-media ul li a {
+main .contact-section .social-media ul li a {
   text-decoration: none;
   color: #526A80;
+}
+main .icono-wpp a img {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  transition: 1s;
+}
+main .icono-wpp a img:hover {
+  transform: rotate(40deg);
+  width: 100px;
 }
 
 footer .sub-text p {

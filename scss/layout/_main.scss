@@ -28,23 +28,6 @@ main {
         width: 100%;
     }
 
-    .icono-wpp {
-        a {
-            img {
-                position: fixed;
-                bottom: 20px;
-                right: 20px;
-                width: 80px;
-                transition: 1s;
-
-                &:hover {
-                    transform: rotate(40deg, );
-                    width: 100px;
-                }
-            }
-        }
-    }
-
 
 
     .contact-section {
@@ -84,24 +67,37 @@ main {
         .contact-info h3{
             padding-bottom: 20px;
         }
+        .social-media ul {
+            list-style: none;
+            padding: 10px;
+        
+            li {
+                display: inline-block;
+                margin-right: 10px;
+        
+                a {
+                    text-decoration: none;
+                    color: #526A80;
+                }
+            }
+        }
     }
-
-
-
-}
-
-
-.social-media ul {
-    list-style: none;
-    padding: 10px;
-
-    li {
-        display: inline-block;
-        margin-right: 10px;
-
+    .icono-wpp {
         a {
-            text-decoration: none;
-            color: #526A80;
+            img {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 80px;
+                transition: 1s;
+
+                &:hover {
+                    transform: rotate(40deg, );
+                    width: 100px;
+                }
+            }
         }
     }
 }
+
+
